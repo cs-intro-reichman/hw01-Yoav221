@@ -7,18 +7,14 @@ import java.util.Scanner;
 
 public class Coins {
 	public static void main(String[] args) {
-		try (// Put your code here
-				Scanner scanner = new Scanner(System.in)) {
-			System.out.println("Quantity of cents: ");
-			int cents = scanner.nextInt();
 
-			int quarters = cents / 25;
-			int reminder = cents % 25;
+		int cents = Integer.parseInt(args[0]);
 
-			System.out.println("Quarters: " + quarters);
-			System.out.println("Reminder in cents: " + reminder);
+		int quarters = cents / 25;
+		int reminder = cents % 25;
 
-		}
+		System.out.println("Quarters: " + quarters);
+		System.out.println("Reminder in cents: " + reminder);
 
 	}
 }
