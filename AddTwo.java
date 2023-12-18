@@ -1,8 +1,6 @@
-
 /*
  * Adds two given integers and prints the result in a fancy way.
  */
-import java.util.Scanner;
 
 public class AddTwo {
 	public static void main(String[] args) {
