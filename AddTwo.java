@@ -9,7 +9,6 @@ public class AddTwo {
 		int sum = first_num + second_num;
 
 		System.out.println(sum);
-		System.out.println("Done!");
 
 		// Put your code here
 	}
