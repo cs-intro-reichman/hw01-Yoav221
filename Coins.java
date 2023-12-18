@@ -11,8 +11,7 @@ public class Coins {
 		int quarters = cents / 25;
 		int reminder = cents % 25;
 
-		System.out.println("Quarters: " + quarters);
-		System.out.println("Reminder in cents: " + reminder);
+		System.out.println("Use " + quarters + " quarters and " + reminder + " cents");
 
 	}
 }
