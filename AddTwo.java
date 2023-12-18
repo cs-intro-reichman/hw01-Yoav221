@@ -10,7 +10,7 @@ public class AddTwo {
 
 		int sum = a + b;
 
-		System.out.println(sum);
+		System.out.println(a + " + " + b + " = " + sum);
 
 	}
 }
