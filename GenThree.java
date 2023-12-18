@@ -1,9 +1,25 @@
-/*
- * Generates three random integers, each in a given range [a,b),
- * prints them, and then prints the minimal number that was generated.
- */
+import java.util.concurrent.ThreadLocalRandom;
+import java.util.Scanner;
+
 public class GenThree {
 	public static void main(String[] args) {
-		// Put your code here	
+
+		try (Scanner scanner = new Scanner(System.in)) {
+			System.out.println("Range minimum: ");
+			int a = scanner.nextInt();
+			System.out.println("Range maximun: ");
+			int b = scanner.nextInt();
+
+			int random_int_1 = ThreadLocalRandom.current().nextInt(a, b + 1);
+			int random_int_2 = ThreadLocalRandom.current().nextInt(a, b + 1);
+			int random_int_3 = ThreadLocalRandom.current().nextInt(a, b + 1);
+
+			System.out.println("First Integer is: " + random_int_1);
+			System.out.println("Second Integer is: " + random_int_2);
+			System.out.println("Third Integer is: " + random_int_3);
+
+			System.out.println("Minimal number is: " + Math.min(Math.min(random_int_1, random_int_2), random_int_3));
+		}
+
 	}
 }
