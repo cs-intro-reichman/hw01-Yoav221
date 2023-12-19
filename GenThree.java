@@ -1,8 +1,3 @@
-
-/*
- * Generates three random integers, each in a given range [a,b),
- * prints them, and then prints the minimal number that was generated.
- */
 import java.util.concurrent.ThreadLocalRandom;;
 
 public class GenThree {
@@ -19,7 +14,7 @@ public class GenThree {
 		System.out.println(random_int_2);
 		System.out.println(random_int_3);
 
-		System.out.println(Math.min(Math.min(random_int_1, random_int_2), random_int_3));
+		System.out.println("The minimal number is: " + Math.min(Math.min(random_int_1, random_int_2), random_int_3));
 
 	}
 }

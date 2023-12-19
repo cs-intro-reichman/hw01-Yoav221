@@ -30,7 +30,7 @@ public class GenThreeTest {
             String capturedOutput = outputStream.toString();
             // Check if the program prints the minimal number that was generated
             if (!isValid(capturedOutput, min, max)) {
-                System.out.println("All tests passed!");
+                System.out.println("Test failed: Minimal number was not printed or not in range");
                 return;
             }
 
