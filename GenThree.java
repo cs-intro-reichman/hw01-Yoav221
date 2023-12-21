@@ -1,5 +1,3 @@
-import java.util.concurrent.ThreadLocalRandom;;
-
 public class GenThree {
 	public static void main(String[] args) {
 
