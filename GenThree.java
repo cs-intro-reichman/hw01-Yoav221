@@ -6,15 +6,15 @@ public class GenThree {
 		int a = Integer.parseInt(args[0]);
 		int b = Integer.parseInt(args[1]);
 
-		int random_int_1 = ThreadLocalRandom.current().nextInt(a, b);
-		int random_int_2 = ThreadLocalRandom.current().nextInt(a, b);
-		int random_int_3 = ThreadLocalRandom.current().nextInt(a, b);
+		int random1 = (int) ((Math.random() * (b - a)) + a);
+		int random2 = (int) ((Math.random() * (b - a)) + a);
+		int random3 = (int) ((Math.random() * (b - a)) + a);
 
-		System.out.println(random_int_1);
-		System.out.println(random_int_2);
-		System.out.println(random_int_3);
+		System.out.println(random1);
+		System.out.println(random2);
+		System.out.println(random3);
 
-		System.out.println("The minimal number is: " + Math.min(Math.min(random_int_1, random_int_2), random_int_3));
+		System.out.println("The minimal number is: " + Math.min(Math.min(random1, random2), random3));
 
 	}
 }
